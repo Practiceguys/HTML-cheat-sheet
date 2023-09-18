@@ -1,0 +1,1702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>HTML-cheat-sheet</title>
+</head>
+<body>
+    <!-- Document Summary/Outline -->
+    <table>
+        <legend>Welcome</legend>
+        <tr>
+            <th colspan="6"><h2>Document Summary/Outline</h2></th>
+        </tr>
+        <tr>
+            <th>Tag</th>
+            <th>Attributes</th>
+            <th>Description</th>
+            <th>Values</th>
+            <th>Example</th>
+            <th>Output</th>
+        </tr>
+        <tr>
+            <td><code>&lt;!DOCTYPE html&gt;</code></td>
+            <td></td>
+            <td>This shows that this is html5 or this is html5 declaration.<br>Doctype is not case sensitive.</td>
+            <td></td>
+            <td rowspan="5"><code>&lt;!DOCTYPE html&gt; <br> &lt;html lang="en"&gt;<br>&lt;head&gt;<br>&lt;/head&gt;<br>&lt;body&gt;<br>Hello World!<br>&lt;/body&gt;<br>&lt;/html&gt;</code></td>
+            <td rowspan="5"><iframe width="120" height="120" title="main-page" src="main/doctype.html" frameborder="0"></iframe></td>
+        </tr>
+        <tr>
+            <td rowspan="2"><code>&lt;html&gt;</code></td>
+            <td></td>
+            <td>Root element defines the hole html document.</td>
+            
+        </tr>
+        <tr>
+            <td>lang=”en”<br>lang="en-US"</td>
+            <td>It declares the language of the Web page and assists search engines and browsers.</td>
+            <td><a href="https://www.w3schools.com/tags/ref_language_codes.asp">Reference for Language Codes.</a><hr><a href="https://www.w3schools.com/tags/ref_country_codes.asp">Reference for Country Codes.</a></td>
+        </tr>
+        <tr>
+            <td>&lt;head&gt;</td>
+            <td>Global attributes</td>
+            <td>Contains metadata/information for the document.</td>
+        </tr>
+        <tr>
+            <td>&lt;body&gt;</td>
+            <td>Global attributes<hr>Event attributes</td>
+            <td>Contains all the html contents like headings, paragraphs, hyperlinks, images, etc.</td>
+
+        </tr>
+
+
+
+        <!-- The elements inside head section -->
+        <tr>
+            <th colspan="6"><h2>The Elements Inside Head Section</h2></th>
+        </tr>
+        <tr>
+            <th>Tag</th>
+            <th>Attributes</th>
+            <th>Description</th>
+            <th>Values</th>
+            <th>Example</th>
+            <th>Output</th>
+        </tr>
+        <tr>
+            <td>&lt;title&gt;</td>
+            <td>Global attributes</td>
+            <td>Defines a title in the browser's toolbar. You can have only one.</td>
+            <td></td>
+            <td><code>&lt;head&gt;<br>&lt;title&gt;<br>HTML-cheat-sheet<br>&lt;/title&gt;<br>&lt;/head&gt;</code></td>
+            <td><img src="main/html-cheat-sheet0.png" width="120" alt="here is the output!"></td>
+        </tr>
+        <tr>
+            <td rowspan="3">&lt;style&gt;</td>
+            <td>Global attributes<hr>Event attributes</td>
+            <td>It is used to define style information (CSS) for a document.</td>
+            <td></td>
+            <td rowspan="3"><code>
+                &lt;style type="text/css" media="screen"&gt;<br>
+                *{<br>
+                    background-color: chocolate;<br>
+                }<br>
+                &lt;/style&gt;</code>
+            </td>
+            <td rowspan="3"><iframe width="120" height="120" title="style1-page" src="main/style1.html" frameborder="0"></iframe></td>
+        </tr>
+        <tr>
+            <td>media</td>
+            <td>This attribute specifies what media/device the CSS style is optimized for.</td>
+            <td>screen<br>print<br>tv<br>all<br><a href="https://www.w3schools.com/TAGs/att_style_media.asp">etc.</a></td>
+        </tr>
+        <tr>
+            <td>type</td>
+            <td>The type attribute identifies the content between the &lt;style&gt; and &lt;/style&gt; tags.</td>
+            <td>"text/css"</td>
+        </tr>
+        <tr>
+            <td rowspan="3">&lt;base/&gt;</td>
+            <td>Global attributes</td>
+            <td>Specifies the base URL and/or target for all relative URLs in a document. Must have either an href or a target or both.</td>
+            <td></td>
+            <td rowspan="3"><code>
+                &lt;head&gt;<br>
+                    &lt;base href="https://www.w3schools.com/" target="_blank"&gt;<br>
+                  &lt;/head&gt;<br>
+                  
+                  &lt;body&gt;<br>
+                  &lt;img src="images/stickman.gif" width="24" height="39" alt="Stickman"&gt;<br>
+                  &lt;a href="tags/tag_base.asp"&gt;HTML base Tag&lt;/a&gt;<br>
+                  &lt;/body&gt;</code>
+            </td>
+            <td rowspan="3"><iframe width="120" height="120" title="base-page" src="main/base.html" frameborder="0"></iframe></td>
+        </tr>
+        <tr>
+            <td>href</td>
+            <td>Specifies the base URL for all relative URLs in the page.</td>
+            <td>URL</td>
+        </tr>
+        <tr>
+            <td>target</td>
+            <td>Specifies the default target for all hyperlinks and forms in the page.</td>
+            <td>_blank<br>
+                _parent<br>
+                _self<br>
+                _top
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="4">&lt;link&gt;</td>
+            <td>Global attributes</td>
+            <td>Defines the relationship between the current document and an external resource. or to link to external style sheets or to add a favicon to your website.</td>
+            <td></td>
+            <td rowspan="4"><code>
+                &lt;!DOCTYPE html&gt;<br>
+                &lt;html&gt;<br>
+                    &lt;head&gt;<br>
+                        &lt;link rel="stylesheet"<br>type="text/css" href="styles.css"&gt;<br>
+                    &lt;/head&gt;<br>
+                &lt;body&gt;<br>
+
+                &lt;h1&gt;Hello World!&lt;/h1&gt;<br>
+
+                &lt;h2&gt;I am formatted with a linked style sheet.&lt;/h2&gt;<br>
+
+                &lt;p&gt;Me too!&lt;/p&gt;<br>
+
+                &lt;/body&gt;<br>
+                &lt;/html&gt;</code>
+            </td>
+            <td rowspan="4"><iframe width="120" height="400" title="main-page" src="main/link-style.html" frameborder="0"></iframe></td>
+        </tr>
+        <tr>
+            <td>rel</td>
+            <td>Required. Specifies the relationship between the current document and the linked document.</td>
+            <td>alternate<br>
+                author<br>
+                dns-prefetch<br>
+                help<br>
+                icon<br>
+                license<br>
+                next<br>
+                pingback<br>
+                preconnect<br>
+                prefetch<br>
+                preload<br>
+                prerender<br>
+                prev<br>
+                search<br>
+                stylesheet
+            </td>
+        </tr>
+        <tr>
+            <td>href</td>
+            <td>Specifies the location of the linked document</td>
+            <td>URL</td>
+        </tr>
+        <tr>
+            <td>type</td>
+            <td>The type attribute specifies the media type of the linked document/resource.</td>
+            <td>media-type for more click <a href="http://www.iana.org/assignments/media-types/">here</a></td>
+        </tr>
+        <tr>
+            <td rowspan="5">&lt;meta&gt;</td>
+            <td></td>
+            <td>Defines metadata about an HTML document. Metadata is data (information) about data.</td>
+            <td></td>
+            <td rowspan="5"><code>
+                &lt;head&gt;<br>
+                    &lt;meta charset="UTF-8"&gt;<br>
+                    &lt;meta name="description" content="Free Web tutorials"&gt;<br>
+                    &lt;meta name="keywords" content="HTML,CSS,XML,JavaScript"&gt;<br>
+                    &lt;meta name="author" content="John Doe"&gt;<br>
+                    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br>
+                  &lt;/head&gt;<br>
+                  &lt;body&gt;<br>
+                    &lt;p&gt;All meta information goes in the head section...&lt;/p&gt;<br>
+                  &lt;/body&gt;<br></code>
+            </td>
+            <td rowspan="5"><iframe width="120" height="400" title="meta-page" src="main/meta.html" frameborder="0"></iframe></td>
+        </tr>
+        <tr>
+            <td>charset</td>
+            <td>Specifies the character encoding for the HTML document</td>
+            <td>character_set</td>
+        </tr>
+        <tr>
+            <td>content</td>
+            <td>The content attribute gives the value associated with the http-equiv or name attribute.</td>
+            <td>text</td>
+        </tr>
+        <tr>
+            <td>http-equiv</td>
+            <td>Provides an HTTP header for the information/value of the content attribute.</td>
+            <td>content-security-policy<br>
+                content-type<br>
+                default-style<br>
+                refresh</td>
+        </tr>
+            <td>name</td>
+            <td>Specifies a name for the metadata.</td>
+            <td>application-name<br>
+                author<br>
+                description<br>
+                generator<br>
+                keywords<br>
+                viewport</td>
+        <tr>
+            <td>&lt;script&gt;</td>
+            <td></td>
+            <td>It is used to embed JavaScript. It either contains scripting statements, or it points to an external script file.</td>
+            <td></td>
+            <td>
+                <code>
+                    &lt;!DOCTYPE html&gt;<br>
+                    &lt;html&gt;<br>
+                    &lt;body&gt;<br>
+
+                    &lt;h3&gt;The script element&lt;/h3&gt;<br>
+
+                    &lt;p id="demo"&gt;<br>&lt;/p&gt;<br>
+
+                    &lt;script&gt;<br>
+                    document.getElementById("demo").innerHTML = "Hello JavaScript!";<br>
+                    &lt;/script&gt;<br> 
+
+                    &lt;/body&gt;<br>
+                    &lt;/html&gt;<br>
+                </code>
+            </td>
+            <td><iframe width="120" height="120" title="script-page" src="main/script.html" frameborder="0"></iframe></td>
+        </tr>
+        <!-- Links -->
+        <tr>
+            <th colspan="6"><h2>Links</h2></th>
+        </tr>
+        <tr>
+            <th>Tag</th>
+            <th>Attributes</th>
+            <th>Description</th>
+            <th>Values</th>
+            <th>Example</th>
+            <th>Output</th>
+        </tr>
+        <tr>
+            <td rowspan="9">&lt;a&gt;</td>
+            <td></td>
+            <td>The &lt;a&gt; tag defines a hyperlink, which is used to link from one page to another.</td>
+            <td></td>
+            <td rowspan="2">
+                <code>&lt;a href="https://www.w3schools.com" target="_blank"&gt;Visit W3Schools.com!&lt;/a&gt;</code> 
+            </td>
+            <td rowspan="2"><a href="https://www.w3schools.com" rel="noopener" target="_blank">Visit W3Schools.com!</a></td>
+        </tr>
+        <tr>
+            <td>target</td>
+            <td>Specifies where to open the linked document.</td>
+            <td>_blank<br>
+                _parent<br>
+                _self<br>
+                _top</td>
+        </tr>
+        <tr>
+            <td>type</td>
+            <td>Specifies the media type of the linked document.</td>
+            <td>media-type</td>
+        </tr>
+        <tr>
+            <td>rel</td>
+            <td>Specifies the relationship between the current document and the linked document.</td>
+            <td>alternate<br>
+                author<br>
+                bookmark<br>
+                external<br>
+                help<br>
+                license<br>
+                next<br>
+                nofollow<br>
+                noreferrer<br>
+                noopener<br>
+                prev<br>
+                search<br>
+                tag
+            </td>
+            <td>
+                <code>
+                    &lt;h3&gt;The rel attribute&lt;/h3&gt;<br>
+                    &lt;p&gt;&lt;a rel="nofollow"<br> href="http://www.functravel.com/"&gt;<br>Cheap Flights<br>
+                    &lt;/a&gt;&lt;/p&gt;
+                </code>
+            </td>
+            <td>
+                <h3>The rel attribute</h3>
+                <p><a rel="nofollow" href="http://www.functravel.com/">Cheap Flights</a></p>
+            </td>
+            
+        </tr>
+        <tr>
+            <td>download</td>
+            <td>Specifies that the target will be downloaded when a user clicks on the hyperlink.</td>
+            <td>filename</td>
+            <td rowspan="2"><code>
+                &lt;p&gt;Click on the picture&lt;/p&gt;<br>
+                &lt;a<br> href="/main/picture.jpeg" download&gt;<br>
+                &lt;img<br> src="/main/picture.jpeg"<br> alt="W3Schools" width="120"<br> height="100"&gt;<br>
+                &lt;/a&gt;
+                </code>
+            </td>
+            <td rowspan="2"><p>Click on the picture</p><a href="/main/picture.jpeg" download>
+                <img src="/main/picture.jpeg" alt="W3Schools" width="120" height="100">
+              </a>
+            </td>
+        </tr>
+        <tr>
+            <td>href</td>
+            <td>Specifies the URL of the page the link goes to.</td>
+            <td>URL</td>
+        </tr>
+        <tr>
+            <td>hreflang</td>
+            <td>Specifies the language of the linked document.</td>
+            <td>language_code</td>
+            <td>
+                <code>
+                    &lt;a href="https://www.w3schools.com" hreflang="en"&gt;W3Schools&lt;/a&gt;
+                </code>
+            </td>
+            <td>
+                <a href="https://www.w3schools.com" hreflang="en">W3Schools</a>
+            </td>
+        </tr>
+        <tr>
+            <td>ping</td>
+            <td>Specifies a space-separated list of URLs to which, when the link is followed, post requests with the body ping will be sent by the browser (in the background). Typically used for tracking.</td>
+            <td>list_of_URLs</td>
+            <td>
+                <code>
+                    &lt;a href="https://www.w3schools.com/html"<br> ping="https://www.w3schools.com/trackpings"&gt;<br>Send a ping <br>&lt;/a&gt;
+                </code>
+            </td>
+            <td>
+                <a href="https://www.w3schools.com/html" ping="https://www.w3schools.com/trackpings">Send a ping</a>
+            </td>
+        </tr>
+        <tr>
+            <td>referrerpolicy</td>
+            <td>Specifies which referrer information to send with the link</td>
+            <td>no-referrer<br>
+                no-referrer-when-downgrade<br>
+                origin<br>
+                origin-when-cross-origin<br>
+                same-origin<br>
+                strict-origin-when-cross-origin<br>
+                unsafe-url<br>
+            </td>
+            <td>
+                <code>
+                    &lt;a href="https://www.w3schools.com" referrerpolicy="origin"&gt;A link is here&lt;/a&gt;
+                </code>
+            </td>
+            <td>
+                <a href="https://www.w3schools.com" referrerpolicy="origin">A link is here</a>
+            </td>
+        </tr>
+
+
+        <!-- Text Markup -->
+        <tr>
+            <th colspan="6"><h2>Text Markup</h2></th>
+        </tr>
+        <tr>
+            <th>Tag</th>
+            <th>Attributes</th>
+            <th>Description</th>
+            <th>Values</th>
+            <th>Example</th>
+            <th>Output</th>
+        </tr>
+        <tr>
+            <td>&lt;strong&gt;</td>
+            <td>Global attributes<hr>Event attributes</td>
+            <td>It is used to define text with strong importance. The content inside is typically displayed in bold.</td>
+            <td></td>
+            <td>
+                <code>&lt;strong&gt;strong&lt;/strong&gt;</code>
+            </td>
+            <td><strong>strong</strong></td>
+        </tr>
+        <tr>
+            <td>&lt;em&gt;</td>
+            <td>Global attributes<hr>Event attributes</td>
+            <td>It is used to define emphasized text. The content inside is typically displayed in italic.</td>
+            <td></td>
+            <td>
+                <code>&lt;em&gt;emphasized&lt;/em&gt;</code>
+            </td>
+            <td><em>emphasized</em></td>
+        </tr>
+        <tr>
+            <td rowspan="2">&lt;blockquote&gt;</td>
+            <td>Global attributes<hr>Event attributes</td>
+            <td>Specifies a section that is quoted from another source. Browsers usually indent these elements</td>
+            <td></td>
+            <td rowspan="2"><code>&lt;p&gt;normal text&lt;/p&gt;<br>&lt;blockquote cite="http://www.worldwildlife.org/who/index.html" &gt;blockquote&lt;/blockquote&gt;</code></td>
+            <td rowspan="2"><p>normal text</p><blockquote cite="http://www.worldwildlife.org/who/index.html">blockquote</blockquote></td>
+        </tr>
+        <tr>
+            <td>cite</td>
+            <td>Specifies the source of the quotation</td>
+            <td>URL</td>
+        </tr>
+        <tr>
+            <td rowspan="2">&lt;q&gt;</td>
+            <td>Global attributes<hr>Event attributes</td>
+            <td>Defines a short quotation. Use blockquote for long quotations.</td>
+            <td></td>
+            <td rowspan="2"><code>&lt;q cite="http://www.worldwildlife.org/who/index.html" &gt;quotation&lt;/q&gt;</code></td>
+            <td rowspan="2"><q cite="http://www.worldwildlife.org/who/index.html">quotation</q></td>
+        </tr>
+        <tr>
+            <td>cite</td>
+            <td>Specifies the source of the quotation</td>
+            <td>URL</td>
+        </tr>
+        <tr>
+            <td>&lt;abbr&gt;</td>
+            <td>Global attributes<hr>Event attributes</td>
+            <td>Defines an abbreviation or an acronym. Use the title attribute for mouse over.</td>
+            <td></td>
+            <td><code>&lt;abbr title="World Wide Web"&gt;WWW&lt;/abbr&gt;</code></td>
+            <td><abbr title="World Wide Web">WWW</abbr></td>
+        </tr>
+        <tr>
+            <td>&lt;acronym&gt;</td>
+            <td>Global attributes<hr>Event attributes</td>
+            <td>Defines an acronym.</td>
+            <td></td>
+            <td></td>
+            <td>Not supported in HTML5.</td>
+        </tr>
+        <tr>
+            <td>&lt;address&gt;</td>
+            <td>Global attributes<hr>Event attributes</td>
+            <td>Defines the contact information for the author/owner of a document or an article. The content will be italic, and the tag is block.</td>
+            <td></td>
+            <td>
+                <code>
+                    &lt;address&gt;
+                        SayedAbad, <br>
+                        Wardak, <br>
+                        Afghanistan <br>
+                    &lt;/address&gt;
+                </code>
+            </td>
+            <td><address>
+                SayedAbad, <br>
+                Wardak, <br>
+                Afghanistan
+            </address></td>
+        </tr>
+        <tr>
+            <td>&lt;pre&gt;</td>
+            <td>Global attributes<hr>Event attributes</td>
+            <td>Element is displayed in a fixed-width font, and the text preserves both spaces and line breaks.</td>
+            <td></td>
+            <td>
+                <code>
+                    &lt;pre class="code-block" id="preformatted"&gt;
+                    <br>
+                    &nbsp;&nbsp;This is preformatted text.
+                    <br>
+                    &lt;/pre&gt;
+                </code>
+            </td>
+            <td>
+                <pre class="code-block" id="preformatted">
+                    This is preformatted text.
+                                    </pre>
+            </td>
+        </tr>
+        <tr>
+            <td>&lt;dfn&gt;</td>
+            <td>Global attributes<hr>Event attributes</td>
+            <td>It specifies a term that is going to be defined within the content. The nearest parent of the &lt;dfn&gt; tag must also contain the definition/explanation for the term.</td>
+            <td></td>
+            <td>
+                <code>
+                    &lt;dfn class="definition" id="definition-term"&gt;HTML&lt;/dfn&gt;
+                    <br>
+                    &lt;p&gt;HTML stands for HyperText Markup Language.&lt;/p&gt;
+                </code>
+            </td>
+            <td>
+                <dfn class="definition" id="definition-term">HTML</dfn>
+                <p>HTML stands for HyperText Markup Language.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>&lt;code&gt;</td>
+            <td>Global attributes<hr>Event attributes</td>
+            <td>It is used to define a piece of computer code. The content inside is displayed in the browser's default monospace font.</td>
+            <td></td>
+            <td>
+                <code>
+                &lt;code class="code-block" id="code-sample"&gt;console.log('Hello, world!');&lt;/code&gt;
+                </code>
+            </td>
+            <td><code class="code-block" id="code-sample">console.log('Hello, world!');</code></td>
+        </tr>
+        <tr>
+            <td>&lt;cite&gt;</td>
+            <td>Global attributes<hr>Event attributes</td>
+            <td>Defines the title of a creative work. The text is rendered in italics.</td>
+            <td></td>
+            <td>
+                <code>
+                    &lt;cite class="book-title" id="book-title"&gt;The Great Gatsby&lt;/cite&gt;
+                </code>
+            </td>
+            <td><cite class="book-title" id="book-title">The Great Gatsby</cite></td>
+        </tr>
+        <tr>
+            <td>&lt;del&gt;</td>
+            <td>Global attributes<hr>Event attributes</td>
+            <td>Defines text that has been deleted from a document. Browsers will usually strike a line through deleted text.</td>
+            <td></td>
+            <td>
+                <code>
+                    &lt;del class="deleted" id="deleted-text" cite="https://example.com/revision" datetime="2022-09-01"&gt;This text has been deleted.&lt;/del&gt;
+                </code>
+            </td>
+            <td><del class="deleted" id="deleted-text" cite="https://example.com/revision" datetime="2022-09-01">This text has been deleted.</del></td>
+        </tr>
+        <tr>
+            <td rowspan="3">&lt;ins&gt;</td>
+            <td>Global attributes<hr>Event attributes</td>
+            <td>Defines a text that has been inserted into a document. Browsers will usually underline inserted text.</td>
+            <td></td>
+            <td rowspan="3">
+                <code>
+                    &lt;ins class="inserted" id="inserted-text" cite="https://example.com/revision" datetime="2022-09-01"&gt;This text has been inserted.&lt;/ins&gt;
+                </code>
+            </td>
+            <td rowspan="3">
+                <ins class="inserted" id="inserted-text" cite="https://example.com/revision" datetime="2022-09-01">This text has been inserted.</ins>
+            </td>
+        </tr>
+        <tr>
+            <td>cite</td>
+            <td>The cite attribute specifies a URL to a document that explains the reason why the text was inserted/changed.</td>
+            <td>URL</td>
+        </tr>
+        <tr>
+            <td>datetime</td>
+            <td>Specifies the date and time when the text was inserted/changed</td>
+            <td>YYYY-MM-DDThh:mm:ssTZD</td>
+        </tr>
+        <tr>
+            <td>&lt;sub&gt;</td>
+            <td>Global attributes<hr>Event attributes</td>
+            <td>Defines subscript text</td>
+            <td></td>
+            <td>
+                <code>
+                    &lt;sub class="subscript" id="sub-text"&gt;H2O&lt;/sub&gt;
+                </code>
+            </td>
+            <td>H<sub class="subscript" id="sub-text">2</sub>O</td>
+        </tr>
+        <tr>
+            <td>&lt;sup&gt;</td>
+            <td>Global attributes<hr>Event attributes</td>
+            <td>Defines superscript text.</td>
+            <td></td>
+            <td>
+                <code>
+                    E=mc&lt;sup class="superscript" id="sup-text"&gt;2&lt;/sup&gt;
+                </code>
+            </td>
+            <td>E=mc<sup class="superscript" id="sup-text">2</sup></td>
+        </tr>
+        <tr>
+            <td rowspan="2">&lt;bdo&gt;</td>
+            <td></td>
+            <td>It is used to override the current text direction.</td>
+            <td></td>
+            <td rowspan="2">
+                <code>&lt;bdo class="rtl-text" id="bdo-text" dir="rtl"&gt;مرحبًا بك&lt;/bdo&gt;</code>
+            </td>
+            <td rowspan="2"><bdo class="rtl-text" id="bdo-text" dir="rtl">مرحبًا بك</bdo></td>
+        </tr>
+        <tr>
+            <td>dir</td>
+            <td>Specifies the text direction.</td>
+            <td>rtl <br>ltr</td>
+        </tr>
+        
+        
+        <!-- Lists -->
+        <tr>
+            <th colspan="6"><h2>Lists</h2></th>
+        </tr>
+        <tr>
+            <th>Tag</th>
+            <th>Attributes</th>
+            <th>Description</th>
+            <th>Values</th>
+            <th>Example</th>
+            <th>Output</th>
+        </tr>
+        <tr>
+            <td rowspan="4">&lt;ol&gt;</td>
+            <td>Global attributes<hr>Event attributes</td>
+            <td>It defines an ordered list. An ordered list can be numerical or alphabetical.</td>
+            <td></td>
+            <td rowspan="4">
+                <code>
+                    &lt;ol class="ordered-list" id="ordered-list" start="5" type="A" reversed&gt;
+                    <br>
+                    &nbsp;&nbsp;&lt;li&gt;Item A&lt;/li&gt;
+                    <br>
+                    &nbsp;&nbsp;&lt;li&gt;Item B&lt;/li&gt;
+                    <br>
+                    &lt;/ol&gt;
+                </code>
+            </td>
+            <td rowspan="4">
+                <ol class="ordered-list" id="ordered-list" start="5" type="A" reversed>
+                    <li>Item A</li>
+                    <li>Item B</li>
+                </ol>
+            </td>
+        </tr>
+        <tr>
+            <td>reversed</td>
+            <td>Specifies that the list order should be reversed (9,8,7...)</td>
+            <td>reversed</td>
+        </tr>
+        <tr>
+            <td>start</td>
+            <td>Specifies the start value of an ordered list</td>
+            <td>number</td>
+        </tr>
+        <tr>
+            <td>type</td>
+            <td>Specifies the kind of marker to use in the list</td>
+            <td>1 <br>
+                A <br>
+                a <br>
+                I <br>
+                i</td>
+        </tr>
+        <tr>
+            <td>&lt;ul&gt;</td>
+            <td>Global attributes<hr>Event attributes</td>
+            <td>Defines an unordered (bulleted) list. The list items will usually be displayed with bullet points.</td>
+            <td></td>
+            <td>
+                <code>
+                    &lt;ul class="list" id="unordered-list"&gt;
+                    <br>
+                    &nbsp;&nbsp;&lt;li&gt;Item 1&lt;/li&gt;
+                    <br>
+                    &nbsp;&nbsp;&lt;li&gt;Item 2&lt;/li&gt;
+                    <br>
+                    &lt;/ul&gt;
+                </code>
+            </td>
+            <td><ul class="list" id="unordered-list">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2">&lt;li&gt;</td>
+            <td>Global attributes<hr>Event attributes</td>
+            <td>Defines a list item.</td>
+            <td></td>
+            <td rowspan="2">
+                <code>
+                    &lt;ol&gt;
+                        &lt;li value="100"&gt;Coffee&lt;/li&gt;
+                        &lt;li&gt;Tea&lt;/li&gt;
+                        &lt;li&gt;Milk&lt;/li&gt;
+                        &lt;li&gt;Water&lt;/li&gt;
+                        &lt;li&gt;Juice&lt;/li&gt;
+                        &lt;li&gt;Beer&lt;/li&gt;
+                    &lt;/ol&gt;
+                </code>
+            </td>
+            <td rowspan="2"><ol>
+                <li value="100">Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+                <li>Water</li>
+                <li>Juice</li>
+                <li>Beer</li>
+              </ol></td>
+        </tr>
+        <tr>
+            <td>value</td>
+            <td>The value attribute is used only for ordered lists.</td>
+            <td>number</td>
+        </tr>
+        <tr>
+            <td>&lt;dl&gt;</td>
+            <td>Global attributes<hr>Event attributes</td>
+            <td>Defines a description list.</td>
+            <td></td>
+            <td rowspan="3">
+                <code>
+                    &lt;dl&gt;
+                        &lt;dt&gt;Coffee&lt;/dt&gt;
+                        &lt;dd&gt;Black hot drink&lt;/dd&gt;
+                        &lt;dt&gt;Milk&lt;/dt&gt;
+                        &lt;dd&gt;White cold drink&lt;/dd&gt;
+                    &lt;/dl>
+                </code>
+            </td>
+            <td rowspan="3">
+                <dl>
+                    <dt>Coffee</dt>
+                    <dd>Black hot drink</dd>
+                    <dt>Milk</dt>
+                    <dd>White cold drink</dd>
+                </dl>
+            </td>
+        </tr>
+        <tr>
+            <td>&lt;dt&gt;</td>
+            <td>Global attributes<hr>Event attributes</td>
+            <td>Defines a term/name in a description list.</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>&lt;dd&gt;</td>
+            <td>Global attributes<hr>Event attributes</td>
+            <td>It is used to describe a term/name in a description list. You can put paragraphs, line breaks, images, links, lists, etc.</td>
+            <td></td>
+        </tr>
+        
+        
+        <!-- Tables -->
+        <tr>
+            <th colspan="6"><h2>Tables</h2></th>
+        </tr>
+        <tr>
+            <th>Tag</th>
+            <th>Attributes</th>
+            <th>Description</th>
+            <th>Values</th>
+            <th>Example</th>
+            <th>Output</th>
+        </tr>
+        <tr>
+            <td>&lt;table&gt;</td>
+            <td>Global attributes<hr>Event attributes</td>
+            <td>The &lt;table&gt; tag defines an HTML table.</td>
+            <td></td>
+            <td rowspan="18">
+                <code>
+                    
+                &lt;table class="data-table" id="sample-table" border="1" cellspacing="0" cellpadding="10"&gt;
+                <br>
+                &nbsp;&nbsp;&lt;caption&gt;
+                &nbsp;&nbsp;&lt;caption&gt;
+                <br>
+                &nbsp;&nbsp;&lt;colgroup&gt;
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;col span="1" style="background-color:rgb(219, 156, 156)"&gt;
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;col style="background-color:rgb(64, 186, 139)"&gt;
+                <br>
+                &nbsp;&nbsp;&lt;/colgroup&gt;
+                <br>
+                &nbsp;&nbsp;&lt;thead&gt;
+                <br>
+                &nbsp;&nbsp;&lt;tr&gt;
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Header 1&lt;/th&gt;
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Header 2&lt;/th&gt;
+                <br>
+                &nbsp;&nbsp;&lt;/tr&gt;
+                <br>
+                &nbsp;&nbsp;&lt;/thead&gt;
+                <br>
+                &nbsp;&nbsp;&lt;/tbody&gt;
+                <br>
+                &nbsp;&nbsp;&lt;tr&gt;
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Row 1, Cell 1&lt;/td&gt;
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Row 1, Cell 2&lt;/td&gt;
+                <br>
+                &nbsp;&nbsp;&lt;/tr&gt;
+                <br>
+                &nbsp;&nbsp;&lt;tr&gt;
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Row 2, Cell 1&lt;/td&gt;
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Row 2, Cell 2&lt;/td&gt;
+                <br>
+                &nbsp;&nbsp;&lt;/tr&gt;
+                <br>
+                &nbsp;&nbsp;&lt;/tbody&gt;
+                <br>
+                &nbsp;&nbsp;&lt;tfoot&gt;
+                <br>
+                &nbsp;&nbsp;&lt;tr&gt;
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;td colspan="2" &gt;By Romanullah Rahmani&lt;/td&gt;
+                <br>
+                &nbsp;&nbsp;&lt;/tr&gt;
+                <br>
+                &nbsp;&nbsp;&lt;/tfoot&gt;
+                <br>
+                &lt;/table&gt;
+                </code>
+            </td>
+            <td rowspan="18">
+                <table class="data-table" id="sample-table" cellspacing="0" cellpadding="10">
+                    <caption>My table</caption>
+                    <colgroup>
+                        <col span="1" style="background-color:rgb(219, 156, 156)">
+                        <col style="background-color:rgb(64, 186, 139)">
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th>Header 1</th>
+                        <th>Header 2</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Row 1, Cell 1</td>
+                        <td>Row 1, Cell 2</td>
+                    </tr>
+                    <tr>
+                        <td>Row 2, Cell 1</td>
+                        <td>Row 2, Cell 2</td>
+                    </tr>
+                    </tbody>
+                    <tfoot>
+                    <tr>
+                        <td colspan="2">BY Romanullah Rahmani</td>
+                    </tr>
+                    </tfoot>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>&lt;caption&gt;</td>
+            <td>Global attributes<hr>Event attributes</td>
+            <td>The &lt;caption&gt; tag defines a table caption.</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>&lt;thead&gt;</td>
+            <td>Global attributes<hr>Event attributes</td>
+            <td>The &lt;thead&gt; tag is used to group header content in an HTML table.</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>&lt;tr&gt;</td>
+            <td>Global attributes<hr>Event attributes</td>
+            <td>The &lt;tr&gt; tag defines a row in an HTML table.</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>&lt;tbody&gt;</td>
+            <td>Global attributes<hr>Event attributes</td>
+            <td>The &lt;tbody&gt; tag is used to group the body content in an HTML table.</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>&lt;tfoot&gt;</td>
+            <td>Global attributes<hr>Event attributes</td>
+            <td>The &lt;tfoot&gt; tag is used to group footer content in an HTML table.</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td rowspan="6">&lt;th&gt;</td>
+            <td>Global attributes<hr>Event attributes</td>
+            <td>The &lt;th&gt; tag defines a header cell in an HTML table.</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>abbr</td>
+            <td>Specifies an abbreviated version of the content in a header cell.</td>
+            <td>Text</td>
+        </tr>
+        <tr>
+            <td>colspan</td>
+            <td>Specifies the number of columns a header cell should span.</td>
+            <td>Number</td>
+        </tr>
+        <tr>
+            <td>rowspan</td>
+            <td>Specifies the number of rows a header cell should span</td>
+            <td>Number</td>
+        </tr>
+        <tr>
+            <td>headers</td>
+            <td>Specifies one or more header cells a cell is related to.</td>
+            <td>header-id</td>
+        </tr>
+        <tr>
+            <td>scope</td>
+            <td>Specifies whether a header cell is a header for a column, row, or group of columns or rows</td>
+            <td>col<br>
+                colgroup<br>
+                row<br>
+                rowgroup</td>
+        </tr>
+        <tr>
+            <td rowspan="4">&lt;td&gt;</td>
+            <td>Global attributes<hr>Event attributes</td>
+            <td>The &lt;td&gt; tag defines a standard data cell in an HTML table.</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>colspan</td>
+            <td>Specifies the number of columns a header cell should span.</td>
+            <td>Number</td>
+        </tr>
+        <tr>
+            <td>rowspan</td>
+            <td>Specifies the number of rows a header cell should span</td>
+            <td>Number</td>
+        </tr>
+        <tr>
+            <td>headers</td>
+            <td>Specifies one or more header cells a cell is related to.</td>
+            <td>header-id</td>
+        </tr>
+        <tr>
+            <td>&lt;colgroup&gt;</td>
+            <td></td>
+            <td>This tag specifies a group of one or more columns in a table for formatting.</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>&lt;col&gt;</td>
+            <td></td>
+            <td>This tag specifies column properties for each column within a &lt;colgroup&gt; element.</td>
+            <td></td>
+        </tr>
+
+        
+        <!-- Images -->
+        <tr>
+            <th colspan="6"><h2>Images</h2></th>
+        </tr>
+        <tr>
+            <th>Tag</th>
+            <th>Attributes</th>
+            <th>Description</th>
+            <th>Values</th>
+            <th>Example</th>
+            <th>Output</th>
+        </tr>
+        
+        <tr>
+            <td>&lt;img&gt;</td>
+            <td>Global attributes<hr>Event attributes</td>
+            <td>This tag is used to embed an image in an HTML page.</td>
+            <td></td>
+            <td rowspan="3">
+                <code>
+                    &lt;img src="image.jpg" alt="Image Description" width="200" height="150"&gt;
+                </code>
+            </td>
+            <td rowspan="3"><img src="main/picture.jpeg" alt="Wardak Province" width="200" height="150"></td>
+        </tr>
+        <tr>
+            <td>&lt;map&gt;</td>
+            <td>Global attributes<hr>Event attributes</td>
+            <td>The &lt;map&gt; tag is used to define an image map. An image map is an image with clickable areas.</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>&lt;area&gt;</td>
+            <td>Global attributes<hr>Event attributes</td>
+            <td>The &lt;area&gt; tag defines an area inside an image map (an image map is an image with clickable areas).</td>
+            <td></td>
+        </tr>
+        
+        <!-- Forms -->
+        <tr>
+            <th colspan="6"><h2>Forms</h2></th>
+        </tr>
+        <tr>
+            <th>Tag</th>
+            <th>Attributes</th>
+            <th>Description</th>
+            <th>Values</th>
+            <th>Example</th>
+            <th>Output</th>
+        </tr>
+        <tr>
+            <td>&lt;form&gt;</td>
+            <td>Global attributes<hr>Event attributes</td>
+            <td>The &lt;form&gt; tag is used to create an HTML form for user input.</td>
+            <td></td>
+            <td rowspan="5">
+                <code>
+                    &lt;form action="/action_page.php" method="get"&gt;<br>
+                        &lt;input type="checkbox" name="vehicle1" value="Bike"&gt;<br>
+                        &lt;label for="vehicle1"&gt; I have a bike&lt;/label&gt;&lt;br&gt;<br>
+                        &lt;input type="checkbox" name="vehicle2" value="Car"&gt;<br>
+                        &lt;label for="vehicle2"&gt; I have a car&lt;/label&gt;&lt;br&gt;<br>
+                        &lt;input type="checkbox" name="vehicle3" value="Boat" checked&gt;<br>
+                        &lt;label for="vehicle3"&gt; I have a boat&lt;/label&gt;&lt;br&gt;&lt;br&gt;<br>
+                        &lt;input type="submit" value="Submit"&gt;<br>
+                    &lt;/form&gt;
+                </code>
+            </td>
+            <td rowspan="5">
+                <form action="/action_page.php" method="get">
+                    <fieldset>
+                        <legend>Provide information</legend>
+                        <input type="checkbox" title="hello" name="vehicle1" value="Bike">
+                        <label for="vehicle1"> I have a bike</label><br>
+                        <input type="checkbox" title="hello" name="vehicle2" value="Car">
+                        <label for="vehicle2"> I have a car</label><br>
+                        <input type="checkbox" title="hello" name="vehicle3" value="Boat" checked>
+                        <label for="vehicle3"> I have a boat</label><br><br>
+                        <input type="submit" value="Submit">
+                    </fieldset>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>&lt;label&gt;</td>
+            <td>Global attributes<hr>Event attributes</td>
+            <td>The &lt;label&gt; tag defines a label for several elements like: &lt;meter&gt;, &lt;progress&gt;, &lt;select&gt; and &lt;textarea&gt;.</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>&lt;input&gt;</td>
+            <td>Global attributes<hr>Event attributes</td>
+            <td>The &lt;input&gt; tag specifies an input field where the user can enter data.</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>&lt;legend&gt;</td>
+            <td>Global attributes<hr>Event attributes</td>
+            <td>The &lt;legend&gt; tag defines a caption for the &lt;fieldset&gt; element.</td>
+            <td></td>
+        </tr>
+        <!-- fieldset -->
+        <tr>
+            <td>&lt;fieldset&gt;</td>
+            <td>Global attributes<hr>Event attributes</td>
+            <td>The &lt;fieldset&gt; tag is used to group related elements in a form.</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>&lt;optgroup&gt;</td>
+            <td>Global attributes<hr>Event attributes</td>
+            <td>Defines a group of related options in a drop-down list. If you have a long list of options, groups of related options are easier to handle for a user.</td>
+            <td></td>
+            <td rowspan="3">
+                <code>
+                    &lt;form action="/action_page.php"&gt;<br>
+                    &lt;label for="cars"&gt;Choose a car:&lt;/label&gt;<br>
+                    &lt;select name="cars" id="cars"&gt;<br>
+                    &ensp;&lt;optgroup label="Swedish Cars"&gt;<br>
+                    &ensp;&ensp;&lt;option value="volvo"&gt;Volvo&lt;/option&gt;<br>
+                    &ensp;&ensp;&lt;option value="saab"&gt;Saab&lt;/option&gt;<br>
+                    &ensp;&lt;/optgroup&gt;<br>
+                    &ensp;&lt;optgroup label="German Cars"&gt;<br>
+                    &ensp; &ensp;&lt;option value="mercedes"&gt;Mercedes&lt;/option&gt;<br>
+                    &ensp; &ensp;&lt;option value="audi"&gt;Audi&lt;/option&gt;<br>
+                    &ensp;&lt;/optgroup&gt;<br>
+                    &lt;/select&gt;<br>
+                    &lt;br&gt;&lt;br&gt;<br>
+                    &ensp;&lt;input type="submit" value="Submit"&gt;<br>
+                    &lt;/form&gt;
+                </code>
+            </td>
+            <td rowspan="3">
+                <form action="/action_page.php">
+                    <label for="cars">Choose a car:</label>
+                    <select name="cars" id="cars">
+                        <optgroup label="Swedish Cars">
+                            <option value="volvo">Volvo</option>
+                            <option value="saab">Saab</option>
+                        </optgroup>
+                        <optgroup label="German Cars">
+                            <option value="mercedes">Mercedes</option>
+                            <option value="audi">Audi</option>
+                        </optgroup>
+                    </select>
+                    <br><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>&lt;select&gt;</td>
+            <td>Global attributes<hr>Event attributes</td>
+            <td>The &lt;select&gt; element is used to create a drop-down list.</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>&lt;option&gt;</td>
+            <td>Global attributes<hr>Event attributes</td>
+            <td>The &lt;option&gt; tag defines an option in a select list. If you have a long list of options, you can group related options within the &lt;optgroup&gt; tag.</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>&lt;textarea&gt;</td>
+            <td>Global attributes<hr>Event attributes</td>
+            <td>defines a multi-line text input control. The &lt;textarea&gt; element is often used in a form, to collect user inputs like comments or reviews.</td>
+            <td></td>
+            <td rowspan="2">
+                <code>
+                    &lt;div&gt;<br>
+                       &ensp;&lt;textarea name="input" id="txt" <br>&ensp; cols="20" rows="5"<br>&ensp;placeholder="Write your comment here..."&gt;<br>&ensp;&lt;/textarea&gt;&lt;br&gt;<br>
+                        &ensp;&lt;button&gt;Submit&lt;/button&gt;<br>
+                    &lt;/div&gt;
+                </code>
+            </td>
+            <td rowspan="2">
+                <div>
+                    <textarea name="input" id="txt" cols="20" rows="5" placeholder="Write your comment here..."></textarea><br>
+                    <button>Submit</button>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>&lt;button&gt;</td>
+            <td>Global attributes<hr>Event attributes</td>
+            <td>The &lt;button&gt; tag defines a clickable button. Always specify the “type” attribute for a &lt;button&gt; element, to tell browsers what type of button it is.</td>
+            <td></td>
+        </tr>
+
+        <!-- Global Attributes -->
+        <tr>
+            <th colspan="6"><h2>Global Attributes</h2></th>
+        </tr>
+        <tr>
+            <th>Attribute</th>
+            <th>Description</th>
+            <th>Others</th>
+            <th>Values</th>
+            <th>Example</th>
+            <th>Output</th>
+        </tr>
+        <tr>
+            <td>class</td>
+            <td>Specifies one or more classnames for an element (refers to a class in a style sheet)
+            </td>
+            <td>
+                <p>Naming rules:</p>
+                <ul>
+                    <li>Must begin with a letter A-Z or a-z</li>
+                    <li>Can be followed by: letters (A-Za-z), digits (0-9), hyphens ("-"), and underscores ("_")</li>
+                </ul>
+            </td>
+            <td>classname</td>
+            <td>
+                <code>
+                    &lt;h3 class="intro"&gt;Header 3&lt;/h3&gt;
+                </code>
+            </td>
+            <td>
+                <h3 class="intro">Header 3</h3>
+            </td>
+        </tr>
+        <tr>
+            <td>id</td>
+            <td>Specifies a unique id for an element</td>
+            <td>
+                <p>Naming rules:</p>
+                <ul>
+                    <li>Must contain at least one character</li>
+                    <li>Must not contain any space characters</li>
+                </ul>
+            </td>
+            <td>id</td>
+            <td>
+                <code>
+                    &lt;h3 id="myHeader"&gt;<br>Hello World!<br>&lt;/h3&gt;
+                </code>
+            </td>
+            <td>
+                <h3 id="myHeader">Hello World!</h3>
+            </td>
+        </tr>
+        <tr>
+            <td>title</td>
+            <td>The title attribute specifies extra information about an element.</td>
+            <td>The information is most often shown as a tooltip text when the mouse moves over the element.</td>
+            <td>text</td>
+            <td>
+                <code>
+                    &lt;h3 title="myHeader"&gt;<br>Hello World!<br>&lt;/h3&gt;
+                </code>
+            </td>
+            <td>
+                <h3 title="myHeader">Hello World!</h3>
+            </td>
+        </tr>
+        <tr>
+            <td>style</td>
+            <td>The style attribute specifies an inline style for an element.</td>
+            <td>The style attribute will override any style set globally.</td>
+            <td>style_definitions</td>
+            <td>
+                <code>
+                    &lt;h3 style="color: greenyellow;"&gt;<br>Hello World!<br>&lt;/h3&gt;
+                </code>
+            </td>
+            <td>
+                <h3 style="color: greenyellow;">Hello World!</h3>
+            </td>
+        </tr>
+
+
+
+        <!-- Event Attributes -->
+        <tr>
+            <th colspan="6">
+                <h2>Event Attributes</h2>
+            </th>
+        </tr>
+        <tr>
+            <th colspan="6">
+                <h3>Window Event Attributes</h3>
+            </th>
+        </tr>
+        <tr>
+            <th>Attribute</th>
+            <th>Value</th>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td>onafterprint</td>
+            <td>script</td>
+            <td colspan="4">Script to be run after the document is printed</td>
+        </tr>
+        <tr>
+            <td>onbeforeprint</td>
+            <td>script</td>
+            <td colspan="4">Script to be run before the document is printed</td>
+        </tr>
+        <tr>
+            <td>onbeforeunload</td>
+            <td>script</td>
+            <td colspan="4">Script to be run when the document is about to be unloaded</td>
+        </tr>
+        <tr>
+            <td>onerror</td>
+            <td>script</td>
+            <td colspan="4">Script to be run when an error occurs</td>
+        </tr>
+        <tr>
+            <td>onhashchange</td>
+            <td>script</td>
+            <td colspan="4">Script to be run when there has been changes to the anchor part of the a URL</td>
+        </tr>
+        <tr>
+            <td>onload</td>
+            <td>script</td>
+            <td colspan="4">Fires after the page is finished loading</td>
+        </tr>
+        <tr>
+            <td>onmessage</td>
+            <td>script</td>
+            <td colspan="4">Script to be run when the message is triggered</td>
+        </tr>
+        <tr>
+            <td>onoffline</td>
+            <td>script</td>
+            <td colspan="4">Script to be run when the browser starts to work offline</td>
+        </tr>
+        <tr>
+            <td>ononline</td>
+            <td>script</td>
+            <td colspan="4">Script to be run when the browser starts to work online</td>
+        </tr>
+        <tr>
+            <td>onpagehide</td>
+            <td>script</td>
+            <td colspan="4">	Script to be run when a user navigates away from a page</td>
+        </tr>
+        <tr>
+            <td>onpageshow</td>
+            <td>script</td>
+            <td colspan="4">Script to be run when a user navigates to a page</td>
+        </tr>
+        <tr>
+            <td>onpopstate</td>
+            <td>script</td>
+            <td colspan="4">Script to be run when the window's history changes</td>
+        </tr>
+        <tr>
+            <td>onresize</td>
+            <td>script</td>
+            <td colspan="4">Fires when the browser window is resized</td>
+        </tr>
+        <tr>
+            <td>onstorage</td>
+            <td>script</td>
+            <td colspan="4">Script to be run when a Web Storage area is updated</td>
+        </tr>
+        <tr>
+            <td>onunload</td>
+            <td>script</td>
+            <td colspan="4">Fires once a page has unloaded (or the browser window has been closed)</td>
+        </tr>
+        <tr>
+            <th colspan="6"><h3>Form Events</h3></th>
+        </tr>
+        <tr>
+            <th>Attribute</th>
+            <th>Value</th>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td>onblur</td>
+            <td>script</td>
+            <td colspan="4">Fires the moment that the element loses focus</td>
+        </tr>
+        <tr>
+            <td>onchange</td>
+            <td>script</td>
+            <td colspan="4">Fires the moment when the value of the element is changed</td>
+        </tr>
+        <tr>
+            <td>oncontextmenu</td>
+            <td>script</td>
+            <td colspan="4">Script to be run when a context menu is triggered</td>
+        </tr>
+        <tr>
+            <td>onfocus</td>
+            <td>script</td>
+            <td colspan="4">Fires the moment when the element gets focus</td>
+        </tr>
+        <tr>
+            <td>oninput</td>
+            <td>script</td>
+            <td colspan="4">Script to be run when an element gets user input</td>
+        </tr>
+        <tr>
+            <td>oninvalid</td>
+            <td>script</td>
+            <td colspan="4">Script to be run when an element is invalid</td>
+        </tr>
+        <tr>
+            <td>onreset</td>
+            <td>script</td>
+            <td colspan="4">Fires when the Reset button in a form is clicked</td>
+        </tr>
+        <tr>
+            <td>onsearch</td>
+            <td>script</td>
+            <td colspan="4">Fires when the user writes something in a search field </td>
+        </tr>
+        <tr>
+            <td>onselect</td>
+            <td>script</td>
+            <td colspan="4">Fires after some text has been selected in an element</td>
+        </tr>
+        <tr>
+            <td>onsubmit</td>
+            <td>script</td>
+            <td colspan="4">Fires when a form is submitted</td>
+        </tr>
+
+        <tr>
+            <th colspan="6"><h3>Keyboard Events</h3></th>
+        </tr>
+        <tr>
+            <th>Attribute</th>
+            <th>Value</th>
+            <th colspan="4">Description</th>
+        </tr>
+        
+        <tr>
+            <td>onkeydown</td>
+            <td>script</td>
+            <td colspan="4">Fires when a user is pressing a key</td>
+        </tr>
+        <tr>
+            <td>onkeypress</td>
+            <td>script</td>
+            <td colspan="4">Fires when a user presses a key</td>
+        </tr>
+        <tr>
+            <td>onkeyup</td>
+            <td>script</td>
+            <td colspan="4">Fires when a user releases a key</td>
+        </tr>
+        <tr>
+            <th colspan="6"><h3>Mouse Events</h3></th>
+        </tr>
+        <tr>
+            <th>Attribute</th>
+            <th>Value</th>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td>onclick</td>
+            <td>script</td>
+            <td colspan="4">Fires on a mouse click on the element</td>
+        </tr>
+        <tr>
+            <td>ondblclick</td>
+            <td>script</td>
+            <td colspan="4">Fires on a mouse double-click on the element</td>
+        </tr>
+        <tr>
+            <td>onmousedown</td>
+            <td>script</td>
+            <td colspan="4">Fires when a mouse button is pressed down on an element</td>
+        </tr>
+        <tr>
+            <td>onmousemove</td>
+            <td>script</td>
+            <td colspan="4">Fires when the mouse pointer is moving while it is over an element</td>
+        </tr>
+        <tr>
+            <td>onmouseout</td>
+            <td>script</td>
+            <td colspan="4">Fires when the mouse pointer moves out of an element</td>
+        </tr>
+        <tr>
+            <td>onmouseover</td>
+            <td>script</td>
+            <td colspan="4">Fires when the mouse pointer moves over an element</td>
+        </tr>
+        <tr>
+            <td>onmouseup</td>
+            <td>script</td>
+            <td colspan="4">Fires when a mouse button is released over an element</td>
+        </tr>
+        <tr>
+            <td>onmousewheel</td>
+            <td>script</td>
+            <td colspan="4">Deprecated. Use the onwheel attribute instead</td>
+        </tr>
+        <tr>
+            <td>onwheel</td>
+            <td>script</td>
+            <td colspan="4">Fires when the mouse wheel rolls up or down over an element</td>
+        </tr>
+        <!-- Drag Events -->
+        <tr>
+            <th colspan="6"><h3>Drag Events</h3></th>
+        </tr>
+        <tr>
+            <th>Attribute</th>
+            <th>Value</th>
+            <th colspan="4">Description</th>
+        </tr>
+
+        <tr>
+            <td>ondrag</td>
+            <td>script</td>
+            <td colspan="4">Script to be run when an element is dragged</td>
+        </tr>
+        <tr>
+            <td>ondragend</td>
+            <td>script</td>
+            <td colspan="4">Script to be run at the end of a drag operation</td>
+        </tr>
+        <tr>
+            <td>ondragenter</td>
+            <td>script</td>
+            <td colspan="4">Script to be run when an element has been dragged to a valid drop target</td>
+        </tr>
+        <tr>
+            <td>ondragleave</td>
+            <td>script</td>
+            <td colspan="4">Script to be run when an element leaves a valid drop target</td>
+        </tr>
+        <tr>
+            <td>ondragover</td>
+            <td>script</td>
+            <td colspan="4">Script to be run when an element is being dragged over a valid drop target</td>
+        </tr>
+        <tr>
+            <td>ondragstart</td>
+            <td>script</td>
+            <td colspan="4">Script to be run at the start of a drag operation</td>
+        </tr>
+        <tr>
+            <td>ondrop</td>
+            <td>script</td>
+            <td colspan="4">Script to be run when dragged element is being dropped</td>
+        </tr>
+        <tr>
+            <td>onscroll</td>
+            <td>script</td>
+            <td colspan="4">Script to be run when an element's scrollbar is being scrolled</td>
+        </tr>
+
+
+        <!-- Clipboard Events -->
+        <tr>
+            <th colspan="6"><h3>Clipboard Events</h3></th>
+        </tr>
+        <tr>
+            <th>Attribute</th>
+            <th>Value</th>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td>oncopy</td>
+            <td>script</td>
+            <td colspan="4">Fires when the user copies the content of an element</td>
+        </tr>
+        <tr>
+            <td>oncut</td>
+            <td>script</td>
+            <td colspan="4">Fires when the user cuts the content of an element</td>
+        </tr>
+        <tr>
+            <td>onpaste</td>
+            <td>script</td>
+            <td colspan="4">Fires when the user pastes some content in an element</td>
+        </tr>
+
+
+        <!-- Media Events -->
+        <tr>
+            <th colspan="6"><h3>Media Events</h3></th>
+        </tr>
+        <tr>
+            <th>Attribute</th>
+            <th>Value</th>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td>onabort</td>
+            <td>script</td>
+            <td colspan="4">Script to be run on abort</td>
+        </tr>
+        <tr>
+            <td>oncanplay</td>
+            <td>script</td>
+            <td colspan="4">Script to be run when a file is ready to start playing (when it has buffered enough to begin)</td>
+        </tr>
+        <tr>
+            <td>oncanplaythrough</td>
+            <td>script</td>
+            <td colspan="4">Script to be run when a file can be played all the way to the end without pausing for buffering</td>
+        </tr>
+        <tr>
+            <td>oncuechange</td>
+            <td>script</td>
+            <td colspan="4">Script to be run when the cue changes in a &lt;track&gt; element</td>
+        </tr>
+        <tr>
+            <td>ondurationchange</td>
+            <td>script</td>
+            <td colspan="4">Script to be run when the length of the media changes</td>
+        </tr>
+        <tr>
+            <td>onemptied</td>
+            <td>script</td>
+            <td colspan="4">Script to be run when something bad happens and the file is suddenly unavailable (like unexpectedly disconnects)</td>
+        </tr>
+        <tr>
+            <td>onended</td>
+            <td>script</td>
+            <td colspan="4">Script to be run when the media has reach the end (a useful event for messages like "thanks for listening")</td>
+        </tr>
+        <tr>
+            <td>onerror</td>
+            <td>script</td>
+            <td colspan="4">Script to be run when an error occurs when the file is being loaded</td>
+        </tr>
+        <tr>
+            <td>onloadeddata</td>
+            <td>script</td>
+            <td colspan="4">Script to be run when media data is loaded</td>
+        </tr>
+        <tr>
+            <td>onloadedmetadata</td>
+            <td>script</td>
+            <td colspan="4">Script to be run when meta data (like dimensions and duration) are loaded</td>
+        </tr>
+        <tr>
+            <td>onloadstart</td>
+            <td>script</td>
+            <td colspan="4">Script to be run just as the file begins to load before anything is actually loaded</td>
+        </tr>
+        <tr>
+            <td>onpause</td>
+            <td>script</td>
+            <td colspan="4">Script to be run when the media is paused either by the user or programmatically</td>
+        </tr>
+        <tr>
+            <td>onplay</td>
+            <td>script</td>
+            <td colspan="4">Script to be run when the media is ready to start playing</td>
+        </tr>
+        <tr>
+            <td>onplaying</td>
+            <td>script</td>
+            <td colspan="4">Script to be run when the media actually has started playing</td>
+        </tr>
+        <tr>
+            <td>onprogress</td>
+            <td>script</td>
+            <td colspan="4">Script to be run when the browser is in the process of getting the media data</td>
+        </tr>
+        <tr>
+            <td>onratechange</td>
+            <td>script</td>
+            <td colspan="4">Script to be run each time the playback rate changes (like when a user switches to a slow motion or fast forward mode)</td>
+        </tr>
+        <tr>
+            <td>onseeked</td>
+            <td>script</td>
+            <td colspan="4">Script to be run when the seeking attribute is set to false indicating that seeking has ended</td>
+        </tr>
+        <tr>
+            <td>onseeking</td>
+            <td>script</td>
+            <td colspan="4">Script to be run when the seeking attribute is set to true indicating that seeking is active</td>
+        </tr>
+        <tr>
+            <td>onstalled</td>
+            <td>script</td>
+            <td colspan="4">Script to be run when the browser is unable to fetch the media data for whatever reason</td>
+        </tr>
+        <tr>
+            <td>onsuspend</td>
+            <td>script</td>
+            <td colspan="4">Script to be run when fetching the media data is stopped before it is completely loaded for whatever reason</td>
+        </tr>
+        <tr>
+            <td>ontimeupdate</td>
+            <td>script</td>
+            <td colspan="4">Script to be run when the playing position has changed (like when the user fast forwards to a different point in the media)</td>
+        </tr>
+        <tr>
+            <td>onvolumechange</td>
+            <td>script</td>
+            <td colspan="4">Script to be run each time the volume is changed which (includes setting the volume to "mute")</td>
+        </tr>
+        <tr>
+            <td>onwaiting</td>
+            <td>script</td>
+            <td colspan="4">Script to be run when the media has paused but is expected to resume (like when the media pauses to buffer more data)</td>
+        </tr>
+
+        <!-- Misc Events -->
+        <tr>
+            <th colspan="6"><h3>Misc Events</h3></th>
+        </tr>
+        <tr>
+            <th>Attribute</th>
+            <th>Value</th>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td>ontoggle</td>
+            <td>script</td>
+            <td colspan="4">	Fires when the user opens or closes the &lt;details&gt; element</td>
+        </tr>
+        <tfoot>
+            <tr>
+                <td colspan="6" class="center"><h1>By Romanullah Rahmani</h1></td>
+            </tr>
+        </tfoot>
+        
+    </table>
+
+</body>
+</html>

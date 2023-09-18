@@ -1,0 +1,21 @@
+table, td, th, tr {
+    border: solid 3px green;
+    border-collapse: collapse;
+}
+table{
+    width: 95%;
+}
+th,td{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+th {
+    background-color: #84e8c4;
+  }
+td{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.center{
+    text-align: center;
+}
